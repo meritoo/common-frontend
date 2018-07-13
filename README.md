@@ -1,2 +1,3 @@
-# common-frontend
-Common &amp; useful resources related to frontend
+# Meritoo Common Frontend
+
+Common & useful resources related to frontend

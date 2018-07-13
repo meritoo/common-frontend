@@ -1,0 +1,7 @@
+{
+    "name": "meritoo-common-frontend",
+    "version": "0.1.0",
+    "description": "Common & useful resources related to frontend",
+    "author": "Meritoo <github@meritoo.pl>",
+    "license": "MIT"
+}
