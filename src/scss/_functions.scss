@@ -1,0 +1,16 @@
+/*!
+ * Meritoo Common Frontend
+ * Common & useful functions
+ *
+ * License: MIT
+ * Author: Meritoo <github@meritoo.pl>
+ * Copyright: Meritoo <http://www.meritoo.pl>
+ */
+
+@function black($opacity: 1) {
+    @return rgba(0, 0, 0, $opacity)
+}
+
+@function white($opacity: 1) {
+    @return rgba(255, 255, 255, $opacity)
+}

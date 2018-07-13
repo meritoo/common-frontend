@@ -1,0 +1,78 @@
+/*!
+ * Meritoo Common Frontend
+ * Common & useful mixins
+ *
+ * License: MIT
+ * Author: Meritoo <github@meritoo.pl>
+ * Copyright: Meritoo <http://www.meritoo.pl>
+ */
+
+@mixin reset-all-margins() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin fully-centered($verticallyToo: true, $direction: column) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @if $verticallyToo {
+        align-items: center;
+    }
+}
+
+@mixin wrap-text() {
+    white-space: pre-wrap;
+    word-break: break-all;
+    hyphens: auto;
+}
+
+@mixin disable-selection() {
+    user-select: none;
+}
+
+@mixin element-states($color: '', $text-decoration: '', $background-color: '') {
+    &:hover,
+    &:active,
+    &:focus {
+        @if $color != '' {
+            color: $color;
+        }
+
+        @if $text-decoration != '' {
+            text-decoration: $text-decoration;
+        }
+
+        @if $background-color != '' {
+            background-color: $background-color;
+        }
+    }
+}
+
+@mixin hide-text() {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+}
+
+@mixin background-centered-cover($path) {
+    background: {
+        image: url($path);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+}
+
+@mixin truncate-long-text($display: inline-block) {
+    display: $display;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin border-bottom-inner($width, $color) {
+    box-shadow: 0 $width * (-1) 0 0 $color inset;
+}

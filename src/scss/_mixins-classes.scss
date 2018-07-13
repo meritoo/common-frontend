@@ -1,0 +1,25 @@
+/*!
+ * Meritoo Common Frontend
+ * Common classes based on mixins
+ *
+ * License: MIT
+ * Author: Meritoo <github@meritoo.pl>
+ * Copyright: Meritoo <http://www.meritoo.pl>
+ */
+@import "mixins";
+
+.disable-selection {
+    @include disable-selection();
+}
+
+.truncate-long-text {
+    @include truncate-long-text();
+}
+
+.reset-all-margins {
+    @include reset-all-margins();
+}
+
+.wrap-text {
+    @include wrap-text();
+}

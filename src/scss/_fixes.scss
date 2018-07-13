@@ -1,0 +1,20 @@
+/*!
+ * Meritoo Common Frontend
+ * Fixes of common problems
+ *
+ * License: MIT
+ * Author: Meritoo <github@meritoo.pl>
+ * Copyright: Meritoo <http://www.meritoo.pl>
+ */
+
+//
+// Disable padding in Mozilla Firefox for "browse" input (used for upload)
+// Required to fix ugly displayed "browse" button in the input[type="file"]
+//
+@-moz-document url-prefix() {
+    input {
+        &[type="file"] {
+            padding: 0;
+        }
+    }
+}
