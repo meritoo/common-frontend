@@ -1,7 +1,13 @@
 {
     "name": "meritoo-common-frontend",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Common & useful resources related to frontend",
     "author": "Meritoo <github@meritoo.pl>",
-    "license": "MIT"
+    "license": "MIT",
+    "homepage": "https://github.com/meritoo/common-frontend",
+    "bugs": "https://github.com/meritoo/common-frontend/issues",
+    "repository": {
+        "url": "https://github.com/meritoo/common-frontend",
+        "type": "git"
+    }
 }
