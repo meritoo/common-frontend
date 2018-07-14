@@ -1,4 +1,4 @@
-/*!
+/**
  * Meritoo Common Frontend
  * Common classes based on mixins
  *
@@ -6,7 +6,6 @@
  * Author: Meritoo <github@meritoo.pl>
  * Copyright: Meritoo <http://www.meritoo.pl>
  */
-@import "mixins";
 
 .disable-selection {
     @include disable-selection();
