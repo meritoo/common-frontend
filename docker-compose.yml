@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    yarn:
+        image: node:slim
+        container_name: ${DOCKER_CONTAINER_OWNER}-${DOCKER_CONTAINER_PROJECT}-yarn
+        entrypoint: yarn
+        working_dir: /application
+        volumes:
+            - .:/application:cached
