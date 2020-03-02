@@ -183,5 +183,8 @@ $RECYCLE.BIN/
 /yarn-debug.log*
 /yarn-error.log*
 
+# code coverage from tests
+/reports/jest/code_coverage
+
 # yarn
 /yarn.lock

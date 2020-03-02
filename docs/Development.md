@@ -33,4 +33,36 @@ docker-compose up -d
 
 > Looking for [other Yarn's commands?](https://yarnpkg.com/cli/install)
 
+# Tests running
+
+[Jest](https://jestjs.io) is used as Testing Framework.
+
+### Fast (without code coverage)
+
+```bash
+docker-compose run yarn test
+```
+
+### With code coverage
+
+```bash
+docker-compose run yarn test --coverage
+```
+
+Report with code coverage is stored in `reports/jest/code_coverage` directory.
+
+### With code coverage & without warnings
+
+```bash
+docker-compose run yarn test --coverage --silent
+```
+
+### Watch files for changes and rerun all tests
+
+```bash
+docker-compose run yarn test-watch
+```
+
+> Looking for [other Jest's CLI arguments?](https://jestjs.io/docs/en/cli)
+
 [&lsaquo; Back to `Readme`](../README.md)
