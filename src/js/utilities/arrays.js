@@ -1,5 +1,5 @@
 import { getRandomNumber } from './numbers';
-import { isEmptyString } from './string';
+import { isEmptyString } from './strings';
 import { isEmptyObject } from './objects';
 import { isNullOrUndefined } from './miscellaneous';
 

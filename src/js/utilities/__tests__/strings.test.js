@@ -1,4 +1,4 @@
-import { lowercaseFirstLetter, uppercaseFirstLetter } from '../string';
+import { lowercaseFirstLetter, uppercaseFirstLetter } from '../strings';
 
 describe('uppercaseFirstLetter() function', () => {
     it.each`

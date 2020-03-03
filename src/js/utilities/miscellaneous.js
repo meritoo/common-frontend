@@ -1,6 +1,6 @@
 import { isNullOrEmptyArray } from './arrays';
 import { isEmptyObject } from './objects';
-import { isEmptyString } from './string';
+import { isEmptyString } from './strings';
 
 const DEFAULT_EMPTY_VALUE_REPLACEMENT = '-';
 
