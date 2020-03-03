@@ -1,6 +1,6 @@
 {
     "name": "meritoo-common-frontend",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Common & useful resources related to frontend",
     "author": "Meritoo <github@meritoo.pl>",
     "license": "MIT",
@@ -24,5 +24,5 @@
         "test-watch": "jest --watchAll --coverageDirectory=reports/jest/code_coverage"
     },
     "main": "src/js/utilities/index.js",
-    "sass": "scss/main.scss"
+    "sass": "src/scss/main.scss"
 }
