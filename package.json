@@ -22,5 +22,6 @@
     "scripts": {
         "test": "jest --coverageDirectory=reports/jest/code_coverage",
         "test-watch": "jest --watchAll --coverageDirectory=reports/jest/code_coverage"
-    }
+    },
+    "main": "src/js/utilities/index.js"
 }
