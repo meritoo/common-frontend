@@ -1,13 +1,13 @@
-const arrays = require('./arrays');
-const miscellaneous = require('./miscellaneous');
-const numbers = require('./numbers');
-const objects = require('./objects');
-const string = require('./string');
+import * as Arrays from './arrays';
+import * as Miscellaneous from './miscellaneous';
+import * as Numbers from './numbers';
+import * as Objects from './objects';
+import * as String from './string';
 
-module.exports = {
-    arrays: arrays,
-    miscellaneous: miscellaneous,
-    numbers: numbers,
-    objects: objects,
-    string: string,
+export {
+    Arrays,
+    Miscellaneous,
+    Numbers,
+    Objects,
+    String,
 };
