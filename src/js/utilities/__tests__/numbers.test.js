@@ -79,11 +79,19 @@ describe('getNumberBetween() function', () => {
         ${0}    | ${1}
         ${0}    | ${2}
         ${0}    | ${10}
+        ${3}    | ${8}
+        ${5}    | ${6}
+        ${8}    | ${9}
+        ${9}    | ${15}
         ${-1}   | ${1}
     `('returns expected value', ({ min, max }) => {
         const result = getNumberBetween(min, max);
 
+        console.debug(min, max, result);
+
         expect(result).toBeGreaterThanOrEqual(min);
         expect(result).toBeLessThanOrEqual(max);
+        expect(result).not.toBeGreaterThan(max);
+        expect(result).not.toBeLessThan(min);
     });
 });
