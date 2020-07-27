@@ -87,8 +87,6 @@ describe('getNumberBetween() function', () => {
     `('returns expected value', ({ min, max }) => {
         const result = getNumberBetween(min, max);
 
-        console.debug(min, max, result);
-
         expect(result).toBeGreaterThanOrEqual(min);
         expect(result).toBeLessThanOrEqual(max);
         expect(result).not.toBeGreaterThan(max);
