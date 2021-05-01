@@ -33,6 +33,13 @@ describe('Regex utilities', () => {
             ['a@a.aa'],
             ['abc@def.gh'],
             ['abc.def@gh.ij'],
+            ['abc.def@gh-ij.kl'],
+            ['Abc.Def@gh.ij'],
+            ['abc.def@Gh-Ij.kl'],
+            ['abc_def@gh.ij'],
+            ['abc%def@gh.ij'],
+            ['abc+def@gh.ij'],
+            ['abc-def@gh.ij'],
         ])('returns `true` if provided value is valid email', (email) => {
             const result = isValidEmail(email)
             expect(result).toStrictEqual(true)

@@ -1,4 +1,4 @@
-const EMAIL_PATTERN = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/
+const EMAIL_PATTERN = /^[\w.%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$/
 
 const isValidEmail = (email) => {
     if (!email) {
